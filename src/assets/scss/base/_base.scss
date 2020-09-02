@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media screen and (max-width: $res-large) {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-grey-darkest;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-pry-main, 0.9),
+    rgba($color-pry-dark, 0.8)
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

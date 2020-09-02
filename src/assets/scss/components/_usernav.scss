@@ -1,0 +1,54 @@
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+
+  & > * {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: $color-grey-lighter;
+  }
+
+  &__icon-box {
+    position: relative;
+    padding: 0 2rem;
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: $color-grey-darker;
+    margin-top: 0.5rem;
+  }
+
+  &__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: $color-pry-main;
+    color: #fff;
+    position: absolute;
+    top: -0.5rem;
+    right: 1.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $res-smallest) {
+      top: 0.5rem;
+    }
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  align-self: stretch;
+  color: black;
+  font-size: 4rem;
+  width: 6rem;
+  position: relative;
+  &__b1 {
+    position: absolute;
+    top: -2rem;
+    left: 0rem;
+  }
+  &__b2 {
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+  }
+}
